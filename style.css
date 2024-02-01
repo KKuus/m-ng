@@ -1,0 +1,74 @@
+header{
+    border: 10px solid #D1B3CB;
+    text-align: center;
+    font-size: 1rem;
+    font-family:'Linden Hill', serif;
+    color:#AE899B;
+    padding-bottom: 30px;
+    }
+
+    .roosa1 {
+        height: 100vh;
+        width: 100%;
+        max-width: 100%;
+        background-color: #C18897;
+        display: flex;
+        justify-content: center
+
+    }
+    .roosa2 {
+        height: 95%;
+        max-width: 100%;
+        width: 95%;
+        background-color: #E8C4C6;
+        margin: auto;
+        display: flex;
+        justify-content: center
+    }
+    .roosa3 {
+        height: 95%;
+        width: 95%;
+        background-color: #FEE0E0;
+        margin: auto;
+        display: flex;
+        justify-content: center
+
+    }
+    .taust {
+        height: 95%;
+        width: 95%;
+        background-color: white;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .vasak {
+        height: 100%;
+        width: 50%;
+        border: 3px black;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .parem {
+        height: 100%;
+        width: 50%;
+        border: 3px black;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .box {
+        width: 40rem;
+        height: 40rem;
+        background-color: #D1B3CB;
+        margin-inline: auto;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        border: 2px solid black;
+    }
