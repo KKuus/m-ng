@@ -21,7 +21,7 @@
                 <div class="taust">
                     <div class="vasak">
                         <div class="box"></div>
-                        <button></button>
+                        <button id="hover-button"></button>
                         <span>Put your mouse here</span>
                         <h2>Ruut</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur, autem
@@ -52,7 +52,6 @@
                                     <li><a>Item 1</a></li>
                                     <li><a>Item 2</a></li>
                                     <li><a>Item 3</a></li>
-                                    <li><a>Item 4</a></li>
                                 </ul>
                             </details>
 
@@ -77,19 +76,26 @@
                             <div class="StackBox1">this text is hidden due to</div>
                             <div class="StackBox2">content stacking</div>
                             <br>
-                            <div class="dropdown">Some people might
 
-                                <div class="dropdown-content">.container<br>
-                                    padding-top: 10px <br>
-                                    padding-left: 20px <br>
-                                    padding-right: 20px <br>
-                                    padding-bottom: 30px</div>
-                                    <br>
-                                    <div class="CodeBox3">.container<br>
-                                        padding: 10px 20px 30px 20px
-                                </div>
+                            <div class="code-section" id="code-section-1">
+                                <pre>
+                            .container {
+                                padding-top: 10px;
+                                padding-left: 20px;
+                                padding-right: 20px;
+                                padding-bottom: 30px;
+                            }
+                                </pre>
+                                <button id="section2Button" onclick="toggleCodeSection(2)">Open Section 2</button>
                             </div>
-                        </div>
+
+                            <div class="code-section" id="code-section-2">
+                                <pre>
+                            .container {
+                                padding: 10px 20px 30px 20px;
+                            }
+                                </pre>
+                            </div>
                     </div>
 
 
@@ -98,6 +104,8 @@
             </div>
         </div>
     </div>
+
+<script src="script.js"></script>
 </body>
 
 </html>
