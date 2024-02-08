@@ -24,3 +24,14 @@ function toggleCodeSection(sectionNumber) {
         document.getElementById('section2Button').style.display = 'none';
     }
 }
+
+function toggleContainer(id) {
+    var container = document.getElementById(id);
+    container.style.display = (container.style.display === 'none' || container.style.display === '') ? 'block' : 'none';
+    
+    // Show container2 when container1 is clicked
+    if (id === 'container1') {
+        var container2 = document.getElementById('container2');
+        container2.style.display = 'block';
+    }
+}
