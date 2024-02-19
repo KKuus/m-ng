@@ -1,3 +1,5 @@
+const DEBUG = 1;
+
 function toggleSections() {
     var sections = document.querySelectorAll('.code-section');
     sections.forEach(function (section) {
@@ -65,5 +67,12 @@ function drop(event) {
     event.preventDefault();
     event.target.classList.remove("droppable-hover");
     var data = event.dataTransfer.getData('text');
-    event.target.appendChild(document.getElementById(data));
+    if (!event.target.hasChildNodes() || event.target.childNodes[0].nodeName == "#text" && event.target.childNodes.count == 1) {
+        event.target.appendChild(document.getElementById(data));
+    }
+    else if (DEBUG == true) {
+        console.log("hmm miks miks miks")
+        console.log(event.target.childNodes[0].nodeName)
+        console.log(event.target.childNodes)
+    }
 }
